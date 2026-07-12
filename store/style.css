@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --heading: #393a56;
+  --text: #7e7f85;
+  --theme: #fd5353;
+  --bg: #f7f8f9;
+  --footerBg: #415161;
+
+  --black_star: &#9733;
+  --white_star: &#9734;
+}
+
+/* ============================================
+   Main
+   ============================================ */
+
+body {
+  width: 80%;
+  margin: auto;
+}
+.container {
+  background-color: var(--bg);
+  padding: 5px 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--text);
+}
+
+ul {
+  list-style: none;
+}
+/* ============================================
+   End region
+   ============================================ */
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--heading);
+}
+
+/* ============================================
+   End region
+   ============================================ */
+
+/* ============================================
+   Header
+   ============================================ */
+.banner {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.banner_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 25px;
+}
+
+.ctn {
+  margin: 20px 0px;
+  padding: 10px 15px;
+  background-color: var(--theme);
+  color: whitesmoke;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+/* ============================================
+   End Region
+   ============================================ */
+
+/* ============================================
+      Category
+      ============================================ */
+
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.fcategory,
+.scategory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fcategory img,
+.scategory img {
+  border-radius: 25px;
+}
+
+/* ============================================
+   End Region
+   ============================================ */
+
+/* ============================================
+   featured products
+   ============================================ */
+
+.featured-products {
+  display: flex;
+  flex-direction: column;
+  gap: 15;
+}
+
+.featured-products-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.red-line {
+  width: 15%;
+  height: 4px;
+  background-color: var(--theme);
+
+  margin: 5px 0px 50px 0px;
+  border-radius: 10px;
+}
+
+.featured-products-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+featured-products-content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.featured-products-content-item img {
+  border-radius: 20px;
+}
+/* ============================================
+   End Region
+   ============================================ */
+
+.offer {
+  margin: 80px auto;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.offer-content h2 {
+  font-size: 50px;
+}
+
+.featured {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer {
+  background-color: var(--footerBg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.footer div:nth-of-type(1) {
+  flex-grow: 6;
+}
+
+.footer div:nth-of-type(2) {
+  flex-grow: 1;
+  margin: 15px 0px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  gap: 25px;
+}
+
+.footer h4 {
+  color: #ffffff;
+  font-size: 25px;
+}
+.footer li,
+.footer p,
+.footer h3 {
+  color: #ffffff;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grow1 {
+  flex-grow: 1;
+}
+
+.grow2 {
+  flex-grow: 2;
+  max-width: 350px;
+}
